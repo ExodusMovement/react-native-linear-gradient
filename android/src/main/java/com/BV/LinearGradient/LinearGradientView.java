@@ -89,6 +89,10 @@ public class LinearGradientView extends View {
         updatePath();
         drawGradient();
     }
+    
+    public void setPaintDither(boolean dither) {
+        mPaint.setDither(dither);
+    }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {

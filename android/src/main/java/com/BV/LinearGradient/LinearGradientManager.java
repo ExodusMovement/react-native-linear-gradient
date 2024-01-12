@@ -19,6 +19,7 @@ public class LinearGradientManager extends SimpleViewManager<LinearGradientView>
     public static final String PROP_ANGLE_CENTER = "angleCenter";
     public static final String PROP_ANGLE = "angle";
     public static final String PROP_BORDER_RADII = "borderRadii";
+    public static final String PROP_DITHER_ANDROID = "ditherAndroid";
 
     @Override
     public String getName() {
@@ -72,5 +73,10 @@ public class LinearGradientManager extends SimpleViewManager<LinearGradientView>
     @ReactProp(name=PROP_BORDER_RADII)
     public void setBorderRadii(LinearGradientView gradientView, ReadableArray borderRadii) {
         gradientView.setBorderRadii(borderRadii);
+    }
+
+    @ReactProp(name=PROP_DITHER_ANDROID, defaultBoolean=false)
+    public void setAngle(LinearGradientView gradientView, boolean dither) {
+        gradientView.setPaintDither(dither);
     }
 }

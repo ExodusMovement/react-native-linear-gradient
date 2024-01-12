@@ -54,6 +54,7 @@ export default class LinearGradient extends Component<Props> {
       angle,
       start,
       style,
+      ditherAndroid,
       ...otherProps
     } = this.props;
 
@@ -92,6 +93,7 @@ export default class LinearGradient extends Component<Props> {
           angleCenter={convertPoint('angleCenter', angleCenter)}
           angle={angle}
           borderRadii={borderRadiiPerCorner}
+          ditherAndroid={ditherAndroid}
         />
         { children }
       </View>

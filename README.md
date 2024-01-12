@@ -1,3 +1,5 @@
+# Exodus Fork for paint dithering
+
 
 [![Version](https://img.shields.io/npm/v/react-native-linear-gradient.svg)](https://www.npmjs.com/package/react-native-linear-gradient)
 [![NPM](https://img.shields.io/npm/dm/react-native-linear-gradient.svg)](https://www.npmjs.com/package/react-native-linear-gradient)

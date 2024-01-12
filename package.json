@@ -1,6 +1,6 @@
 {
-  "name": "react-native-linear-gradient",
-  "version": "2.5.4",
+  "name": "@exodus/react-native-linear-gradient",
+  "version": "2.5.4-exodus.0",
   "description": "A <LinearGradient> element for React Native",
   "main": "index",
   "author": {
