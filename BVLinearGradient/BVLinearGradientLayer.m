@@ -48,11 +48,15 @@
 - (void)display {
     [super display];
 
-    BOOL hasAlpha = NO;
-
     CGSize size = self.bounds.size;
     if (size.width <= 0 || size.height <= 0) {
         return;
+    }
+
+    BOOL hasAlpha = NO;
+
+    for (NSInteger i = 0; i < self.colors.count; i++) {
+        hasAlpha = hasAlpha || CGColorGetAlpha(self.colors[i].CGColor) < 1.0;
     }
 
     if (@available(iOS 10.0, *)) {
